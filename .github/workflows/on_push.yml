@@ -22,8 +22,28 @@ jobs:
           path: /var/cache/apt/archives
           key: ${{ runner.os }}-apt-cache
 
-      - name: Install pandoc & texlive
-        run: sudo apt-get install pandoc inkscape texlive-xetex
+      - name: Cache apt installation
+        id: cache-apt-installation
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.HOME }}/apt_install_cache
+          key: ${{ runner.os }}-apt-install-cache
+
+      - name: Install pandoc, inkscape & texlive-xetex from cache
+        env:
+          CACHE_HIT: ${{ steps.cache-apt-installation.outputs.cache-hit }}
+        run: |
+          if [[ "$CACHE_HIT" == 'true' ]]; then
+            sudo cp --verbose --force --recursive $HOME/apt_install_cache/* /
+          else
+            sudo apt-get install --yes pandoc inkscape texlive-xetex
+            mkdir -p $HOME/apt_install_cache
+            for pkg in pandoc inkscape texlive-xetex; do
+              sudo dpkg -L "$pkg" | while IFS= read -r f; do
+                if test -f "$f"; then echo "$f"; fi;
+              done | xargs cp --parents --target-directory $HOME/apt_install_cache/
+            done
+          fi
 
       - name: All ipynb to pdf
         run: |
