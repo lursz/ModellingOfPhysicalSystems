@@ -16,13 +16,7 @@ jobs:
       - name: Nbconvert setup
         run: pip install nbconvert
 
-      - name: Cache apt packages
-        uses: actions/cache@v3
-        with:
-          path: /var/cache/apt/archives
-          key: ${{ runner.os }}-apt-cache
-
-      - name: Cache apt installation
+      - name: Cache apt
         id: cache-apt-installation
         uses: actions/cache@v3
         with:
