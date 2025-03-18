@@ -5,13 +5,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: pandoc inkscape texlive-xetex texlive-fonts-recommended
-          version: 1.0
       - uses: actions/checkout@v4
       - run: pip install -r requirements.txt
       - run: pip install nbconvert ipykernel
+      - uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: pandoc texlive-xetex texlive-fonts-recommended
+          version: 1.0
+      - run: sudo apt-get install inkscape
       # - run: sudo apt-get install pandoc inkscape texlive-xetex texlive-fonts-recommended
       - run: |
           for file in $(find lab* -type f -name "*.ipynb"); do
