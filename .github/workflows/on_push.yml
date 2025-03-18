@@ -5,13 +5,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: pip install nbconvert ipykernel scipy pint numpy matplotlib pandas open-atmos-jupyter-utils
-      # - run: sudo apt-get install pandoc inkscape texlive-xetex texlive-fonts-recommended
       - uses: awalsh128/cache-apt-pkgs-action@latest
         with:
           packages: pandoc inkscape texlive-xetex texlive-fonts-recommended
           version: 1.0
       - uses: actions/checkout@v4
+      - run: pip install -r requirements.txt
+      - run: pip install nbconvert ipykernel
+      # - run: sudo apt-get install pandoc inkscape texlive-xetex texlive-fonts-recommended
       - run: |
           for file in $(find lab* -type f -name "*.ipynb"); do
             python -m nbconvert --to pdf --execute "$file"
