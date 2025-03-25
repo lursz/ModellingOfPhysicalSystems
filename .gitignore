@@ -164,3 +164,4 @@ cython_debug/
 # Project-specific files
 **/*.pdf
 **/*.svg
+**/*.gif
