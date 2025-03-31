@@ -12,6 +12,7 @@ jobs:
       #   with:
       #     packages: pandoc texlive-xetex texlive-fonts-recommended inkscape
       #     version: 1.0
+      - run: sudo apt-get update
       - run: sudo apt-get install pandoc inkscape texlive-xetex texlive-fonts-recommended
       - run: |
           for file in $(find lab* -type f -name "*.ipynb"); do
