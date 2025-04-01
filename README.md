@@ -13,8 +13,8 @@ https://github.com/slayoo/AGH-MPS-2025
 | 01. Introduction to Pint | [lab1](/lab1-pint/) |
 | 02. CI/CD for Jupyter notebook| [lab2](/lab2-cicd/) |
 | 03. Advection upwind | [lab3](/lab3-advection-upwind/) |
-| 04.  | [lab4](/4_CNN_Generalization_&_Augumentation/) |
-| 05.  | [lab5](/5_Transfer_Learning/) |
+| 04. Diffusion equation | [lab4](/lab4-diffusion-eq/) |
+| 05. Advection mp-data | [lab5](/lab5-advection-mpdata/) |
 | 06.  | [lab6](/6_Visualization/) |
 | 07.  | [lab7](/7_RNN/) |
 | 08.  | [lab8](/8_GAN/) |
