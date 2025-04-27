@@ -3,4 +3,5 @@ Pint>=0.24.4
 scipy>=1.15.2
 matplotlib>=3.10.1
 jupyter>=1.1.1
+numba>=0.61.2
 open-atmos-jupyter-utils
