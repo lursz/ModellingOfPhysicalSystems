@@ -227,6 +227,25 @@ wheels = [
 ]
 
 [[package]]
+name = "chempy"
+version = "0.9.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "dot2tex" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pulp" },
+    { name = "pyneqsys" },
+    { name = "pyodesys" },
+    { name = "pyparsing" },
+    { name = "quantities" },
+    { name = "scipy" },
+    { name = "sym" },
+    { name = "sympy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0a/29/641d538639c99042da07b33fef7c8cb4412e239f1d5da02c6c072b669538/chempy-0.9.0.tar.gz", hash = "sha256:3ba07d597fef672f3dea4c3ce81e64683f90afd263a7962a6d0db2ab8d9a0204", size = 184714 }
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -289,6 +308,17 @@ wheels = [
 ]
 
 [[package]]
+name = "curandrtc"
+version = "0.1.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "thrustrtc" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b7/b4/4ff819758295877ae96d47ddc4e659a67d31e1864288143791d9fc8c489c/CURandRTC-0.1.7-py3-none-any.whl", hash = "sha256:bd1d92867da794a6ed913df18867c8a4a370639370cb028a532c05fd4ea35ac2", size = 75824 },
+]
+
+[[package]]
 name = "cycler"
 version = "0.12.1"
 source = { registry = "https://pypi.org/simple" }
@@ -330,6 +360,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/0f/d5/c66da9b79e5bdb124974bfe172b4daf3c984ebd9c2a06e2b8a4dc7331c72/defusedxml-0.7.1.tar.gz", hash = "sha256:1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69", size = 75520 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/07/6c/aa3f2f849e01cb6a001cd8554a88d4c77c5c1a31c95bdf1cf9301e6d9ef4/defusedxml-0.7.1-py2.py3-none-any.whl", hash = "sha256:a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61", size = 25604 },
+]
+
+[[package]]
+name = "dot2tex"
+version = "2.11.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyparsing" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/49/03/a0ce345bb4b816fffb9107dcbad2f9bd1dd2db314b9fdb782cd398c95c96/dot2tex-2.11.3.tar.gz", hash = "sha256:299a2af05aee5bbe0257a562a506a93e279293d5c38f28d08ab8acb3233fe7ce", size = 660914 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ca/9e/26e11dfd9762eda401181b4cf388de5421d4ccfdddef0ddc1a8c9256e072/dot2tex-2.11.3-py2.py3-none-any.whl", hash = "sha256:6a1f451823b27d331edca733c7f486a1849e97e77b4bafd562443f5c6e6583e2", size = 36472 },
 ]
 
 [[package]]
@@ -1011,6 +1053,7 @@ dependencies = [
     { name = "open-atmos-jupyter-utils" },
     { name = "pint" },
     { name = "pympdata" },
+    { name = "pysdm" },
     { name = "scipy" },
 ]
 
@@ -1024,7 +1067,17 @@ requires-dist = [
     { name = "open-atmos-jupyter-utils", specifier = ">=1.3.0" },
     { name = "pint", specifier = ">=0.24.4" },
     { name = "pympdata", specifier = ">=1.4.0" },
+    { name = "pysdm", specifier = ">=2.118" },
     { name = "scipy", specifier = ">=1.15.2" },
+]
+
+[[package]]
+name = "mpmath"
+version = "1.3.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e0/47/dd32fa426cc72114383ac549964eecb20ecfd886d1e5ccf5340b55b02f57/mpmath-1.3.0.tar.gz", hash = "sha256:7a28eb2a9774d00c7bc92411c19a89209d5da7c4c9a9e227be8330a23a25b91f", size = 508106 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl", hash = "sha256:a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c", size = 536198 },
 ]
 
 [[package]]
@@ -1369,6 +1422,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pulp"
+version = "3.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/fb/92/bf4b947ec8aac629b835b588e70664c1d0150a8369f798b6c5adb32e39ba/pulp-3.1.1.tar.gz", hash = "sha256:300a330e917c9ca9ac7fda6f5849bbf30d489c368117f197a3e3fd0bc1966d95", size = 16294046 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f5/78/54928786de173be3210963d198e4a7d037f9bf5dd327430090bf6c52e152/pulp-3.1.1-py3-none-any.whl", hash = "sha256:ad9d46afaf78a708270a2fa9b38e56536584c048dfbd7a6dbc719abee1051261", size = 16375371 },
+]
+
+[[package]]
 name = "pure-eval"
 version = "0.2.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1396,6 +1458,18 @@ wheels = [
 ]
 
 [[package]]
+name = "pyevtk"
+version = "1.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/44/dd/d20c1a0c0105611b831536d2c6d9132bb83d70ed80f4b6d328c04acfeb0d/pyevtk-1.6.0.tar.gz", hash = "sha256:1f6be7876a3a005c8258861551da4fe7e44ff1a2e7ff2a93d6dc51deedfda5f4", size = 38980 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/06/da/d57b07c565cc5f8705da436cfcc44754343416c1187d83f04d5443d5cc1a/pyevtk-1.6.0-py3-none-any.whl", hash = "sha256:057415512ab902785c72251df8f8450e4bbc9eab16677f091a4b8ee53b9cc775", size = 20521 },
+]
+
+[[package]]
 name = "pygments"
 version = "2.19.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1419,12 +1493,58 @@ wheels = [
 ]
 
 [[package]]
+name = "pyneqsys"
+version = "0.5.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "scipy" },
+    { name = "sym" },
+    { name = "sympy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/32/2e/e462e8565f1472cc46bebf7a0bca7dc8a452a29dc73c341e4b3f70eaea86/pyneqsys-0.5.7.tar.gz", hash = "sha256:a4ef31b66895171ecab9677d2f36c757debafad450169a2ba0d4e23a7eff283a", size = 29470 }
+
+[[package]]
+name = "pyodesys"
+version = "0.14.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "notebook" },
+    { name = "numpy" },
+    { name = "scipy" },
+    { name = "sym" },
+    { name = "sympy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f8/67/8a393329576ed920bdef9733c352f4057891e6ccbd1caa5233e384188940/pyodesys-0.14.4.tar.gz", hash = "sha256:584e3b8e6c5c633d964d8c6c9c865d348497bf71048de69dd601b65b8d6b882e", size = 107851 }
+
+[[package]]
 name = "pyparsing"
 version = "3.2.3"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/bb/22/f1129e69d94ffff626bdb5c835506b3a5b4f3d070f17ea295e12c2c6f60f/pyparsing-3.2.3.tar.gz", hash = "sha256:b9c13f1ab8b3b542f72e28f634bad4de758ab3ce4546e4301970ad6fa77c38be", size = 1088608 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/05/e7/df2285f3d08fee213f2d041540fa4fc9ca6c2d44cf36d3a035bf2a8d2bcc/pyparsing-3.2.3-py3-none-any.whl", hash = "sha256:a749938e02d6fd0b59b356ca504a24982314bb090c383e3cf201c95ef7e2bfcf", size = 111120 },
+]
+
+[[package]]
+name = "pysdm"
+version = "2.118"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "chempy" },
+    { name = "curandrtc" },
+    { name = "numba" },
+    { name = "numpy" },
+    { name = "pint" },
+    { name = "pyevtk" },
+    { name = "scipy" },
+    { name = "thrustrtc" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fa/11/84fdafe7ab81907415643d2c4939d344b22e3f7cf38398ea9e2c831772b3/pysdm-2.118.tar.gz", hash = "sha256:57078dbc597febc9be4267d74e33d7bbf0ac92acd6a25b84a34167e366300773", size = 5720735 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/82/b0/67819fa99d80aa3116de899e74219f6b32e43c7a1fc086dc6a788ff26582/pysdm-2.118-py3-none-any.whl", hash = "sha256:a15f5682c76ce4e5cc053ade8a02730228ec7a199a9e97a4dec47feb90dc26ff", size = 327302 },
 ]
 
 [[package]]
@@ -1546,6 +1666,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/6e/bc/f88b0bad0f7a7f500547d71e99f10336f2314e525d4ebf576a1ea4a1d903/pyzmq-26.4.0-cp313-cp313t-musllinux_1_1_aarch64.whl", hash = "sha256:b30f862f6768b17040929a68432c8a8be77780317f45a353cb17e423127d250c", size = 1189183 },
     { url = "https://files.pythonhosted.org/packages/d9/8c/db446a3dd9cf894406dec2e61eeffaa3c07c3abb783deaebb9812c4af6a5/pyzmq-26.4.0-cp313-cp313t-musllinux_1_1_i686.whl", hash = "sha256:c80fcd3504232f13617c6ab501124d373e4895424e65de8b72042333316f64a8", size = 1495501 },
     { url = "https://files.pythonhosted.org/packages/05/4c/bf3cad0d64c3214ac881299c4562b815f05d503bccc513e3fd4fdc6f67e4/pyzmq-26.4.0-cp313-cp313t-musllinux_1_1_x86_64.whl", hash = "sha256:26a2a7451606b87f67cdeca2c2789d86f605da08b4bd616b1a9981605ca3a364", size = 1395540 },
+]
+
+[[package]]
+name = "quantities"
+version = "0.16.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/40/b4/a14dbeebf8ab08600152f157344fd88db961a3afdfd0eddc25958c5182a1/quantities-0.16.2.tar.gz", hash = "sha256:1f7c24f10d9ff57ddf751a358ea2fdfa9914516722f06a788ef4a2924c77d21c", size = 101862 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/17/0c/b4ee3f929bbe564101f110080dcdd33d1181a6f8a041cc9e21d992509b52/quantities-0.16.2-py3-none-any.whl", hash = "sha256:bd5b1ed422770b7cd8952ccfccaf67a89024ae0ecb31b1eacbc7ff966899ab34", size = 103021 },
 ]
 
 [[package]]
@@ -1743,6 +1875,27 @@ wheels = [
 ]
 
 [[package]]
+name = "sym"
+version = "0.3.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d2/ed/c06685333acaa3ea4ef301daae784ecc5f60c6ccd288cb84e03e1244acc2/sym-0.3.5.tar.gz", hash = "sha256:854ddd18f0a1f94c9590012e50a139b499b407c90e9ebd407c40285627784ab8", size = 31098 }
+
+[[package]]
+name = "sympy"
+version = "1.14.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "mpmath" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/83/d3/803453b36afefb7c2bb238361cd4ae6125a569b4db67cd9e79846ba2d68c/sympy-1.14.0.tar.gz", hash = "sha256:d3d3fe8df1e5a0b42f0e7bdf50541697dbe7d23746e894990c030e2b05e72517", size = 7793921 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl", hash = "sha256:e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5", size = 6299353 },
+]
+
+[[package]]
 name = "terminado"
 version = "0.18.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1754,6 +1907,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/8a/11/965c6fd8e5cc254f1fe142d547387da17a8ebfd75a3455f637c663fb38a0/terminado-0.18.1.tar.gz", hash = "sha256:de09f2c4b85de4765f7714688fff57d3e75bad1f909b589fde880460c753fd2e", size = 32701 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6a/9e/2064975477fdc887e47ad42157e214526dcad8f317a948dee17e1659a62f/terminado-0.18.1-py3-none-any.whl", hash = "sha256:a4468e1b37bb318f8a86514f65814e1afc977cf29b3992a4500d9dd305dcceb0", size = 14154 },
+]
+
+[[package]]
+name = "thrustrtc"
+version = "0.3.20"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cffi" },
+    { name = "numpy" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5c/c0/cf04a2f95629a3cb1f84f7ab291486add242acf8447b54e7e01e5c2502e2/ThrustRTC-0.3.20-py3-none-any.whl", hash = "sha256:a610595b7e27d00051ca8a6a62dac0f2282e32238ea4df2dcb7fe402f80e7b27", size = 763012 },
 ]
 
 [[package]]
