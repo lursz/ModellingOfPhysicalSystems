@@ -3,8 +3,8 @@ This repository contains Modelling of Physical Systems course.
 All assignments and lectures are available here: 
 https://github.com/slayoo/AGH-MPS-2025
 
-<!-- # Final project  -->
-<!-- The final project included creating a . You can find it [here](). -->
+# Final project 
+The final project included creating a simulation of a falling rain droplet. You can find it [here](https://github.com/open-atmos/PySDM/pull/1648).
 
 # Table of contents
 
